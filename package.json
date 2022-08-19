@@ -1,0 +1,12 @@
+{
+    "name": "@lumeweb/resolver-module-avax",
+    "version": "0.1.0",
+    "main": "dist/index.js",
+    "type": "module",
+    "dependencies": {
+        "@avvy/client": "^2.4.0",
+        "@lumeweb/pokt-rpc-endpoints": "https://github.com/LumeWeb/pokt-rpc-endpoints.git",
+        "@lumeweb/resolver-common": "https://github.com/LumeWeb/resolver-common.git",
+        "@lumeweb/resolver-module-eip137-common": "https://github.com/LumeWeb/resolver-module-eip137-common.git"
+    }
+}
