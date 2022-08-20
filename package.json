@@ -7,7 +7,7 @@
         "build-script": "tsc --project tsconfig.build.json && mv dist-build/build.js dist-build/build.mjs",
         "compile-module": "npm run build-script && node build.js",
         "build": "tsc --project tsconfig.json",
-        "build-module": "npm run compile && node ./dist-build/build.mjs dev"
+        "build-module": "npm run compile-module && node ./dist-build/build.mjs dev"
     },
     "dependencies": {
         "@avvy/client": "^2.4.0",
