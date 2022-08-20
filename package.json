@@ -14,13 +14,22 @@
         "@lumeweb/kernel-libresolver": "https://github.com/LumeWeb/kernel-libresolver.git",
         "@lumeweb/libresolver": "https://github.com/LumeWeb/libresolver.git",
         "@lumeweb/pokt-rpc-endpoints": "https://github.com/LumeWeb/pokt-rpc-endpoints.git",
-        "@lumeweb/resolver-module-eip137": "https://github.com/LumeWeb/resolver-module-eip137.git",
         "@lumeweb/resolver-module-eip137-common": "https://github.com/LumeWeb/resolver-module-eip137-common.git"
     },
     "devDependencies": {
+        "@skynetlabs/skynet-nodejs": "^2.8.0",
         "@types/read": "^0.0.29",
+        "assert": "^2.0.0",
+        "crypto-browserify": "^3.12.0",
         "esbuild": "^0.15.5",
         "libskynetnode": "^0.1.4",
-        "read": "^1.0.7"
+        "os-browserify": "^0.3.0",
+        "read": "^1.0.7",
+        "stream-browserify": "^3.0.0"
+    },
+    "browser": {
+        "crypto": "crypto-browserify",
+        "stream": "stream-browserify",
+        "os": "os-browserify"
     }
 }
