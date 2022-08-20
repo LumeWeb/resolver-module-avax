@@ -7,7 +7,7 @@ import {
   resolverError,
   ResolverOptions,
   resolveSuccess,
-} from "@lumeweb/resolver-common";
+} from "@lumeweb/libresolver";
 import { RpcProvider } from "@lumeweb/resolver-module-eip137-common";
 import pocketNetworks from "@lumeweb/pokt-rpc-endpoints";
 // @ts-ignore
