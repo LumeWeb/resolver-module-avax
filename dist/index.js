@@ -29,8 +29,10 @@ export default class Avax extends AbstractResolverModule {
                 catch (e) {
                     return resolverError(e);
                 }
-                records.push({ type: options.type, value: record });
-                break;
+                if (record.length > 0) {
+                    records.push({ type: options.type, value: record });
+                    break;
+                }
             }
         }
         if (options.type === DNS_RECORD_TYPE.CUSTOM &&
