@@ -20,10 +20,12 @@
         "@skynetlabs/skynet-nodejs": "^2.8.0",
         "@types/read": "^0.0.29",
         "assert": "^2.0.0",
+        "buffer": "^6.0.3",
         "crypto-browserify": "^3.12.0",
         "esbuild": "^0.15.5",
         "libskynetnode": "^0.1.4",
         "os-browserify": "^0.3.0",
+        "process": "^0.11.10",
         "read": "^1.0.7",
         "stream-browserify": "^3.0.0"
     },
