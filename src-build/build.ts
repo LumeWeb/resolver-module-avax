@@ -265,7 +265,7 @@ function handlePassConfirm(password: string) {
   console.log("Uploading module...");
   const client = new SkynetClient("https://web3portal.com");
   client
-    .uploadFile("dist/index.js")
+    .uploadFile("dist-module/index.js")
     .then((result: any) => {
       console.log("Updating module's registry entry...");
       // Update the v2 skylink.
