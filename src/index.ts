@@ -50,8 +50,10 @@ export default class Avax extends AbstractResolverModule {
         } catch (e: any) {
           return resolverError(e);
         }
-        records.push({ type: options.type, value: record as string });
-        break;
+        if (record.length > 0) {
+          records.push({ type: options.type, value: record as string });
+          break;
+        }
       }
     }
 
