@@ -3,10 +3,24 @@
     "version": "0.1.0",
     "main": "dist/index.js",
     "type": "module",
+    "scripts": {
+        "build-script": "tsc --project tsconfig.build.json && mv dist-build/build.js dist-build/build.mjs",
+        "compile-module": "npm run build-script && node build.js",
+        "build": "tsc --project tsconfig.json",
+        "build-module": "npm run compile && node ./dist-build/build.mjs dev"
+    },
     "dependencies": {
         "@avvy/client": "^2.4.0",
+        "@lumeweb/kernel-libresolver": "https://github.com/LumeWeb/kernel-libresolver.git",
+        "@lumeweb/libresolver": "https://github.com/LumeWeb/libresolver.git",
         "@lumeweb/pokt-rpc-endpoints": "https://github.com/LumeWeb/pokt-rpc-endpoints.git",
-        "@lumeweb/resolver-common": "https://github.com/LumeWeb/resolver-common.git",
+        "@lumeweb/resolver-module-eip137": "https://github.com/LumeWeb/resolver-module-eip137.git",
         "@lumeweb/resolver-module-eip137-common": "https://github.com/LumeWeb/resolver-module-eip137-common.git"
+    },
+    "devDependencies": {
+        "@types/read": "^0.0.29",
+        "esbuild": "^0.15.5",
+        "libskynetnode": "^0.1.4",
+        "read": "^1.0.7"
     }
 }
